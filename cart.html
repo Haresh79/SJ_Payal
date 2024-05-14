@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,-25" />
+    
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+         .head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .head>p{
+            margin-left: 20px;
+            padding: 10px;
+        }
+        .head>a{
+            text-decoration: none;
+            color: black;
+        }
+        .head>a>span{
+            margin-right: 20px;
+            font-size: 30px;
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .all>p{
+            width: 80%;
+            padding: 10px;
+            user-select: none;
+        }
+        .all{
+            box-shadow: 0px 0.5px 0.8px rgba(33, 33, 33, 0.122), 0px -0.5px 0.8px rgba(33, 33, 33, 0.122);
+        }
+
+        .float-btn{
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            z-index: 105;
+        }
+        .float-btn>button{
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            width: 80%;
+            padding: 20px;
+            font-size: 1rem;
+        }
+        .item-bottom{
+          background-color:rgba(246, 246, 246, 0.803) ;
+        }
+        .flex-r{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .flex-c{
+            display: flex;
+            flex-direction: column;
+        }
+        .f-ai-c{
+            align-items: center;
+        }
+        .f-jc-c{
+            justify-content: center;
+        }
+        .line-bottom{
+            box-shadow: 0px 1px 0.8px rgba(33, 33, 33, 0.122);
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color:rgba(246, 246, 246, 0.803) ;">
+        <marquee>Order multiple items to receive multiple items delivery in a single delivery charge. </marquee>
+    </div>
+    <div class="head">
+        <p>CART / </p> 
+        <a href="Index.html"><span class="material-symbols-outlined"> home </span></a>
+    </div>
+    <div class="all ">
+        <p><input type="checkbox"> Do you want to order all items</p>
+    </div>
+    <div class="items" style="overflow-y: scroll; height: 75vh;">
+        <div class="c-item">
+            <div class="item-top flex-r ">
+                <img src="imgs/img4.png" width="150px">
+                <div class="flex-c f-jc-c">
+                    <p>no. of item <input type="number" placeholder="1" style="width: 20px; text-align: center; padding: 3px 5px 3px 5px; outline: none;"> </p>
+                    <p style="display: flex; align-items: center;">price: <span class="material-symbols-outlined">
+                        currency_rupee
+                    </span> <span id="price">160</span></p>
+                </div>
+            </div>
+            <div class="item-bottom flex-r f-jc-c line-bottom">
+                <p style="display: flex; align-items: center;"><input type="checkbox" style="margin-right: 5px;"> I want to order.</p>
+                <p>|</p>
+                <p style="display: flex; align-items: center;">Remove this <span class="material-symbols-outlined">
+                    delete_forever
+                    </span></p>
+            </div>
+        </div>
+        <div class="c-item">
+            <div class="item-top flex-r ">
+                <img src="imgs/img3.png" width="150px">
+                <div class="flex-c f-jc-c">
+                    <p>no. of item <input type="number" placeholder="1" style="width: 20px; text-align: center; padding: 3px 5px 3px 5px; outline: none;"> </p>
+                    <p style="display: flex; align-items: center;">price: <span class="material-symbols-outlined">
+                        currency_rupee
+                    </span> <span id="price">160</span></p>
+                </div>
+            </div>
+            <div class="item-bottom flex-r f-jc-c line-bottom">
+                <p style="display: flex; align-items: center;"><input type="checkbox" style="margin-right: 5px;"> I want to order.</p>
+                <p>|</p>
+                <p style="display: flex; align-items: center;">Remove this <span class="material-symbols-outlined">
+                    delete_forever
+                    </span></p>
+            </div>
+        </div>
+        <div class="c-item">
+            <div class="item-top flex-r ">
+                <img src="imgs/img2.png" width="150px">
+                <div class="flex-c f-jc-c">
+                    <p>no. of item <input type="number" placeholder="1" style="width: 20px; text-align: center; padding: 3px 5px 3px 5px; outline: none;"> </p>
+                    <p style="display: flex; align-items: center;">price: <span class="material-symbols-outlined">
+                        currency_rupee
+                    </span> <span id="price">160</span></p>
+                </div>
+            </div>
+            <div class="item-bottom flex-r f-jc-c line-bottom">
+                <p style="display: flex; align-items: center;"><input type="checkbox" style="margin-right: 5px;"> I want to order.</p>
+                <p>|</p>
+                <p style="display: flex; align-items: center;">Remove this <span class="material-symbols-outlined">
+                    delete_forever
+                    </span></p>
+            </div>
+        </div>
+        <div class="c-item">
+            <div class="item-top flex-r ">
+                <img src="imgs/img1.png" width="150px">
+                <div class="flex-c f-jc-c">
+                    <p>no. of item <input type="number" placeholder="1" style="width: 20px; text-align: center; padding: 3px 5px 3px 5px; outline: none;"> </p>
+                    <p style="display: flex; align-items: center;">price: <span class="material-symbols-outlined">
+                        currency_rupee
+                    </span> <span id="price">160</span></p>
+                </div>
+            </div>
+            <div class="item-bottom flex-r f-jc-c line-bottom">
+                <p style="display: flex; align-items: center;"><input type="checkbox" style="margin-right: 5px;"> I want to order.</p>
+                <p>|</p>
+                <p style="display: flex; align-items: center;">Remove this <span class="material-symbols-outlined">
+                    delete_forever
+                    </span></p>
+            </div>
+        </div>
+        <div class="c-item">
+            <div class="item-top flex-r ">
+                <img src="imgs/img4.png" width="150px">
+                <div class="flex-c f-jc-c">
+                    <p>no. of item <input type="number" placeholder="1" style="width: 20px; text-align: center; padding: 3px 5px 3px 5px; outline: none;"> </p>
+                    <p style="display: flex; align-items: center;">price: <span class="material-symbols-outlined">
+                        currency_rupee
+                    </span> <span id="price">160</span></p>
+                </div>
+            </div>
+            <div class="item-bottom flex-r f-jc-c line-bottom">
+                <p style="display: flex; align-items: center;"><input type="checkbox" style="margin-right: 5px;"> I want to order.</p>
+                <p>|</p>
+                <p style="display: flex; align-items: center;">Remove this <span class="material-symbols-outlined">
+                    delete_forever
+                    </span></p>
+            </div>
+        </div>
+    </div>
+    <div class="float-btn">
+        <button>Place Your Order</button>
+    </div>
+</body>
+</html>

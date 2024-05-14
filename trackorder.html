@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,-25" />
+    <title>Document</title>
+    <style>
+        .icon{
+            font-size: 90px;
+            animation-name: roll;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            
+        }
+        .icon-div{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .search{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0 20px 0;
+            gap: 10px;
+            
+            
+        }
+        .search>input{
+            width: 300px;
+            padding: 10px;
+            outline: none;
+            border: 0.5 solid rgba(44, 44, 44, 0.374);
+
+        }
+        .search>button{
+            padding: 10px 20px 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+        }
+        .details{
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+        }
+        .details>p{
+            display: none;
+        }
+        @keyframes roll{
+            0%{ font-size: 50px;}
+            50%{ font-size: 90px;}
+            100%{ font-size: 50px;}
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Track Your Order</h1>
+    <div class="icon-div">
+        <span class="material-symbols-outlined icon">package_2</span>
+    </div>
+    <div class="search"><input type="text" id="o-id" placeholder=" Enter Your Order Id" autofocus><button id="track">TRACK</button></div>
+    <div class="details">
+      <p id="message"> Your order is ariving to you on monday.</p>
+    </div>
+
+    <script>
+
+        document.getElementById('track').addEventListener("click",()=>{
+            var orderId=document.getElementById('o-id').innerText
+            if(orderId != null){
+                document.getElementById('message').style.display="block"
+            }
+            else{
+                alert("Enter Your Order ID Please.")
+            }
+        })
+    </script>
+</body>
+</html>

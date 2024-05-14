@@ -1,0 +1,44 @@
+.h_to_center{
+    width:calc(110vw-10vw);
+    text-align: center;
+    margin-top: 20px ;
+    margin-bottom: 30px;
+}
+
+.card-body>.pro_price{
+    display: flex;
+    align-items: center;
+}
+
+section{
+    overflow-x: hidden;
+}
+.rm-a-ul{
+    text-decoration:none;
+    color: rgb(28, 28, 28);
+    transition: 1s;
+}
+.rm-a-ul-b{
+    text-decoration:none;
+    color: rgb(28, 28, 28);
+    transition: 1s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.rm-a-ul:hover{
+    text-decoration-color: black;
+    text-decoration:underline;
+}
+
+.d-flex{
+    display: flex;
+}
+.f-j-c{
+    justify-content: center;
+}
+.f-jc-sb{
+    justify-content: space-between;
+}
+.f-a-i{
+    align-items: center;
+}
